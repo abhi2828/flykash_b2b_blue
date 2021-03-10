@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="faviconLink1" rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link id="faviconLink2" rel="icon" type="image/ico" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style2.css">
+    <title>Flykash</title>
+    <style></style>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar menu menu-3 fixed-top navbar-expand-lg navbar-light bg-light">
+                        <a href="#"><img src="./assets/images/Logo.png" alt="Logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav nav-menu ml-auto mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Flight </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="#">Hotel </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="#">Holidays </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="#">Shikara </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="#">profile </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="#">support </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="./index.html">Logout </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <script>
+        if ($('.nav-item').hasClass('active')) {
+            $('.nav-item').removeClass('menu_items')
+        } else {
+            $('.nav-item').addClass('menu_items')
+        }
+    </script> -->
+    <!-- search section -->
+
+
+    <section class="banner_img">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container background_form">
+                        <div class="outer_div">
+                            <div class="abhay2">
+                                <div class="login-button-container clearfix">
+                                    <div class="parent_div">
+                                        <div class="col-xs-6 sign-in">
+                                            <button class="btn sign-in__button active">
+                                        Flight       
+                                      </button>
+                                        </div>
+
+                                        <div class="col-xs-6 register">
+                                            <button class="btn register__button">
+                                        Hotel        
+                                      </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="abhay1">
+                                <div class="row login__form" style="display: block;">
+                                    <div class="page">
+                                        <label class="field field_v2">
+                                          <input class="field__input" placeholder="e.g. Mumbai">
+                                          <span class="field__label-wrap">
+                                            <span class="field__label">Flying From</span>
+                                          </span>
+                                        </label>
+                                        <label class="field field_v2">
+                                            <input class="field__input" placeholder="e.g. Delhi">
+                                            <span class="field__label-wrap">
+                                              <span class="field__label">Flying To</span>
+                                            </span>
+                                          </label>
+                                        <label class="field field_v2">
+                                            <input type="date" class="field__input" placeholder="e.g. Mumbai" style="text-transform: lowercase;">
+                                            <span class="field__label-wrap">
+                                              <span class="field__label">Departure Date</span>
+                                            </span>
+                                          </label>
+                                        <label class="field field_v2">
+                                              <input type="date" class="field__input" placeholder="e.g. Delhi" style="text-transform: lowercase;">
+                                              <span class="field__label-wrap">
+                                                <span class="field__label">Return Date</span>
+                                              </span>
+                                            </label>
+                                        <span class="field_inline">
+                                            <label class="field2 field_v2">
+                                                <input type="number" min="0"  value="0" class="field__input" placeholder="Number of Adults">
+                                                <span class="field__label-wrap">
+                                                  <span class="field__label">Adults (12+ Yrs)</span>
+                                        </span>
+                                        </label>
+                                        <label class="field2 field_v2">
+                                                <input type="number" min="0"  value="0" class="field__input" placeholder="Number of Children">
+                                                <span class="field__label-wrap">
+                                                  <span class="field__label">Children (2 - 12 Yrs)</span>
+                                                </span>
+                                        </label>
+                                        <label class="field2 field_v2">
+                                                <input type="number" min="0"  value="0" class="field__input" placeholder="Number of Infant">
+                                                <span class="field__label-wrap">
+                                                  <span class="field__label">Infant (0 - 24 Month)</span>
+                                                </span>
+                                        </label>
+                                        </span>
+                                        <select class="form-control form-control2">
+                                            <option>Economy class</option>
+                                            <option>Business class</option>
+                                            <option>First class</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row register__form" style="display: none;">
+                                    bbbbbbbb
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .h2,
+        h2 {
+            font-size: 2rem;
+            color: blue;
+        }
+        
+        section.section2 {
+            margin-top: 30px;
+        }
+        
+        .outer_div {
+            background: white;
+            padding: 3px 0 0 0;
+            width: 50%;
+            margin-top: 100px;
+            height: 80vh;
+        }
+        
+        .login-button-container {
+            margin: 15px -30px;
+        }
+        
+        .sign-in {
+            padding-left: 0;
+        }
+        
+        .register {
+            padding-right: 0;
+        }
+        
+        .sign-in__button,
+        .register__button {
+            background-color: white;
+            border: 1px solid black;
+            display: block;
+            min-height: 30px;
+            width: 100%;
+        }
+        
+        fieldset {
+            min-width: 0;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            height: 50vh;
+        }
+        
+        .sign-in__button:hover,
+        .register__button:hover {
+            background: none;
+            border: 1px solid #ccc;
+            color: green;
+        }
+        
+        .sign-in__button:focus,
+        .sign-in__button.focus,
+        .register__button:focus,
+        .register__button.focus {
+            outline: none !important;
+        }
+        
+        .sign-in__button:active,
+        .sign-in__button.active,
+        .register__button:active,
+        .register__button.active {
+            background-color: #253184;
+            border: 1px solid #253184;
+            box-shadow: none;
+            color: white;
+        }
+        
+        .hidden_clip {
+            clip: rect(1px 1px 1px 1px);
+            clip: rect(1px, 1px, 1px, 1px);
+            position: absolute;
+        }
+        
+        .text-input__field {
+            border: 0;
+            display: block;
+            font-size: 16px;
+            height: 60px;
+            outline: 1px solid #ccc;
+            padding: 18px;
+            width: 100%;
+        }
+        
+        .text-input__field:focus,
+        .text-input__field.focus {
+            outline: 3px solid orange;
+        }
+        
+        .text-input__field:active,
+        .text-input__field.active {
+            outline: 1px solid black;
+        }
+        
+        .parent_div {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+        
+        button.btn.sign-in__button,
+        button.btn.register__button {
+            width: 200px;
+        }
+        /* abhay */
+        
+        .field__input {
+            --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+            background-color: transparent;
+            border-radius: 0;
+            border: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            font-family: inherit;
+            font-size: inherit;
+        }
+        
+        .field__input:focus::-webkit-input-placeholder {
+            color: var(--uiFieldPlaceholderColor);
+        }
+        
+        .field__input:focus::-moz-placeholder {
+            color: var(--uiFieldPlaceholderColor);
+        }
+        
+        .field {
+            --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+            --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
+            --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);
+            --uiFieldBorderColorActive: var(--fieldBorderColorActive, #253184);
+            display: var(--fieldDisplay, inline-flex);
+            position: relative;
+            font-size: var(--fieldFontSize, 1rem);
+        }
+        
+        .field2 {
+            --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+            --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
+            --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);
+            --uiFieldBorderColorActive: var(--fieldBorderColorActive, #253184);
+            display: var(--fieldDisplay, inline-flex);
+            position: relative;
+            font-size: var(--fieldFontSize, 1rem);
+            width: 30%;
+        }
+        
+        .field__input {
+            box-sizing: border-box;
+            width: var(--fieldWidth, 100%);
+            height: var(--fieldHeight, 3rem);
+            padding: var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight) var(--fieldPaddingBottom, .5rem) var(--uiFieldPaddingLeft);
+            border-bottom: var(--uiFieldBorderWidth) solid var(--fieldBorderColor, rgba(0, 0, 0, .25));
+        }
+        
+        .field__input:focus {
+            outline: none;
+        }
+        
+        .field__input::-webkit-input-placeholder {
+            opacity: 0;
+            transition: opacity .2s ease-out;
+        }
+        
+        .field__input::-moz-placeholder {
+            opacity: 0;
+            transition: opacity .2s ease-out;
+        }
+        
+        .field__input:focus::-webkit-input-placeholder {
+            opacity: 1;
+            transition-delay: .2s;
+        }
+        
+        .field__input:focus::-moz-placeholder {
+            opacity: 1;
+            transition-delay: .2s;
+        }
+        
+        .field__label-wrap {
+            box-sizing: border-box;
+            pointer-events: none;
+            cursor: text;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .field__label-wrap::after {
+            content: "";
+            box-sizing: border-box;
+            width: 100%;
+            height: 0;
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .field__input:focus~.field__label-wrap::after {
+            opacity: 1;
+        }
+        
+        .field__label {
+            position: absolute;
+            left: var(--uiFieldPaddingLeft);
+            top: calc(50% - .5em);
+            line-height: 1;
+            font-size: var(--fieldHintFontSize, inherit);
+            transition: top .2s cubic-bezier(0.9, -0.15, 0.1, 1.15), opacity .2s ease-out, font-size .2s ease-out;
+            will-change: bottom, opacity, font-size;
+        }
+        
+        .field__input:focus~.field__label-wrap .field__label,
+        .field__input:not(:placeholder-shown)~.field__label-wrap .field__label {
+            --fieldHintFontSize: var(--fieldHintFontSizeFocused, .75rem);
+            top: var(--fieldHintTopHover, .25rem);
+        }
+        
+        .field_v2 .field__label-wrap {
+            overflow: hidden;
+        }
+        
+        .field_v2 .field__label-wrap::after {
+            border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
+            transform: translate3d(-105%, 0, 0);
+            will-change: transform, opacity;
+            transition: transform .285s ease-out .2s, opacity .2s ease-out .2s;
+        }
+        
+        .field_v2 .field__input:focus~.field__label-wrap::after {
+            transform: translate3d(0, 0, 0);
+            transition-delay: 0;
+        }
+        
+        span.field_inline {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .form-control:focus {
+            color: #495057;
+            background-color: #fff;
+            border: 2px solid #253184;
+            outline: 0;
+            box-shadow: none;
+        }
+        
+        button.btn.sign-in__button,
+        button.btn.register__button {
+            font-weight: 600;
+        }
+        
+        .sign-in__button:hover,
+        .register__button:hover {
+            background: #253184;
+            border: none;
+            color: white;
+        }
+        
+        .background_form {
+            background: #ff000000;
+        }
+        
+        .footer-widget-heading2 h3::before {
+            content: "";
+            position: absolute;
+            left: 75px;
+            bottom: -15px;
+            height: 2px;
+            width: 50px;
+            background: white;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .page {
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 86%;
+            margin: auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-gap: 10px;
+        }
+        
+        .btn.focus,
+        .btn:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    </style>
+    <script>
+        $('.register__form').hide();
+
+        $('.sign-in__button').click(function(e) {
+            e.preventDefault();
+            $(this).addClass('active');
+            $('.register__button').removeClass('active');
+            $('.login__form').show();
+            $('.register__form').hide();
+            $('#edit-email').focus(); //Should appear after $('.login__form').show(); because if it's before that, the register form doesn't exist in the DOM
+        });
+
+        $('.register__button').click(function(e) {
+            e.preventDefault();
+            $(this).addClass('active');
+            $('.sign-in__button').removeClass('active');
+            $('.register__form').show();
+            $('.login__form').hide();
+            $('#edit-firstname').focus(); //Should appear after $('.register__form').show(); because if it's before that, the register form doesn't exist in the DOM
+        });
+    </script>
+    <section class="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center animateMe" data-animation="fadeInLeft">
+                        <h2>Packages</h2>
+                    </div>
+                    <p class="text-center text-white animateMe" data-animation="fadeInLeft" data-aos="fade-up">Get inspired, find the best deals & start an unforgettable journey with us</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="da-team carousel slide py-5" id="da-carouselIndicator" data-ride="carousel" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="container">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#da-carouselIndicator" data-slide-to="0"></li>
+                <li data-target="#da-carouselIndicator" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card d-block mb-3"><img class="card-img-top" src="./assets/images/packages1.jpg" alt="image" />
+                                <div class="card-body text-center">
+                                    <div class="h5">Taj mahal</div>
+                                    <p class="text-muted">Historical</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card d-block mb-3"><img class="card-img-top" src="./assets/images/packages2.jpg" alt="image" />
+                                <div class="card-body text-center">
+                                    <div class="h5">Kedarnath</div>
+                                    <p class="text-muted">religious places</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card d-block mb-3"><img class="card-img-top" src="./assets/images/packages3.jpg" alt="image" />
+                                <div class="card-body text-center">
+                                    <div class="h5">Disneyland Park</div>
+                                    <p class="text-muted">Park</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card d-block mb-3"><img class="card-img-top" src="./assets/images/packages4.jpeg" alt="image" />
+                                <div class="card-body text-center">
+                                    <div class="h5">Shikara</div>
+                                    <p class="text-muted">india</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card d-block mb-3"><img class="card-img-top" src="./assets/images/packages5.jpg" alt="image" />
+                                <div class="card-body text-center">
+                                    <div class="h5">shimla</div>
+                                    <p class="text-muted">india</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card d-block mb-3"><img class="card-img-top" src="./assets/images/slider3.jpg" alt="image" />
+                                <div class="card-body text-center">
+                                    <div class="h5">honeymoon </div>
+                                    <p class="text-muted">married</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="important_notice_section section2">
+        <div class="container" style="margin-top: 37px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="important_notice">
+                        <div class="news animateMe" data-animation="fadeInLeft">
+                            <h2>Important Notice</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 ">
+                    <p class="text " style="font-size: 18px; ">
+                        <marquee direction="left ">
+                            <p style="color: #253184 !important; ">For flights which have been cancelled, we have protected your booking... Customers who have booked their travel through a travel agent/online portal are requested to connect with the travel agent directly to redeem their credit
+                                note.
+                            </p>
+                        </marquee>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section " style="margin-top: 15px; ">
+        <div class="container-fluid ">
+            <div class="footer-content pt-3 pb-3 ">
+                <div class="row ">
+                    <div class="col-xl-3 col-lg-3 mb-50 ">
+                        <div class="footer-widget ">
+                            <div class="footer-widget-heading footer-widget-heading2 OurServicesHeading ">
+                                <h3>Our Services</h3>
+                            </div>
+                            <ul class="OurServices ">
+                                <li><a href="# ">International Holidays</a></li>
+                                <li><a href="# ">Indian Holidays</a></li>
+                                <li><a href="# ">Religious Packages</a></li>
+                                <li><a href="# ">Historical Packages</a></li>
+                                <li><a href="# ">Weekend Getaways</a></li>
+                                <li><a href="# ">Honeymoon Packages</a></li>
+                                <li><a href="# ">Passport</a></li>
+                                <li><a href="# ">Visa</a></li>
+                                <li><a href="# ">Book Hotels</a></li>
+                                <li><a href="# ">Book Flights</a></li>
+                                <li><a href="# ">Travel Insurance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9 ">
+                        <div class="row ">
+                            <div class="col-xl-3 col-lg-3 mb-50 ">
+                                <div class="footer-widget ">
+                                    <div class="footer-widget-heading footer-widget-heading2">
+                                        <h3>Indian Holidays</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="# ">Andaman Packages</a></li>
+                                        <li><a href="# ">Kashmir Packages</a></li>
+                                        <li><a href="# ">South Packages</a></li>
+                                        <li><a href="# ">North Packages</a></li>
+                                        <li><a href="# ">Kerala Packages</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6 mb-30 ">
+                                <div class="footer-widget ">
+                                    <div class="footer-widget-heading footer-widget-heading2">
+                                        <h3>International Holidays</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="# ">Dubai Packages</a></li>
+                                        <li><a href="# ">Singapore Packages</a></li>
+                                        <li><a href="# ">Mauritius Packages</a></li>
+                                        <li><a href="# ">Thailand Packages</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6 mb-50 ">
+                                <div class="footer-widget ">
+                                    <div class="footer-widget-heading footer-widget-heading2">
+                                        <h3>Ashok Travel World</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="# ">About Us</a></li>
+                                        <li><a href="# ">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 col-md-6 mb-30 ">
+                                <div class="footer-widget ">
+                                    <div class="footer-widget-heading footer-widget-heading2">
+                                        <h3>About The Site</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="# ">Privacy Policy</a></li>
+                                        <li><a href="# ">Terms & Condition</a></li>
+                                        <li><a href="# ">Refund & Cancellation Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row " style="margin-top: 45px;padding-left: 30px; ">
+
+                            <div class="col-md-4 " style="color: white; ">
+                                <div class="footer-widget ">
+                                    <div class="footer-widget-heading footer-widget-heading2 dowloadlink_heading ">
+                                        <h3>Payment Options</h3>
+                                    </div>
+                                    <ul style="display: flex; ">
+                                        <li>
+                                            <a href="# "> </a>
+                                        </li>
+                                        <li><a href="# "><i class="payment_option_icon fab fa-cc-visa "></i></a></li>
+                                        <li><a href="# "><i class="payment_option_icon fab fa-cc-mastercard "></i></a></li>
+                                        <li><a href="# "><i class="payment_option_icon fab fa-cc-amex "></i></a></li>
+                                        <li><a href="# "><i class="payment_option_icon fab fa-cc-paypal "></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 " style="color: white; ">
+                                <div class="footer-widget ">
+                                    <div class="footer-widget-heading footer-widget-heading2  dowloadlink_heading ">
+                                        <h3>Download App</h3>
+                                    </div>
+                                    <ul style="display: flex; ">
+                                        <li>
+                                            <a href="# "><img class="dowloadlink " src="./assets/images/dowloadlink1.svg " alt="dowloadlink1 "></a>
+                                        </li>
+                                        <li>
+                                            <a href="# "><img class="dowloadlink " style="margin-left: -50px; " src="./assets/images/dowloadlink2.svg " alt="dowloadlink2 "></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 " style="color: white; ">
+                                <div class="footer-widget ">
+                                    <div class="footer-widget-heading footer-widget-heading2 dowloadlink_heading ">
+                                        <h3>Connect With Us</h3>
+                                    </div>
+                                    <ul style="display: flex; ">
+                                        <li>
+                                            <a href="# "> <i class="fab fa-facebook " style="font-size: 30px; "></i></a>
+                                        </li>
+                                        <li><a href="# "><i class="fab fa-instagram " style="font-size: 30px; "></i></a></li>
+                                        <li><a href="# "><i class="fab fa-whatsapp " style="font-size: 30px; "></i></a></li>
+                                        <li><a href="# "><i class="far fa-envelope " style="font-size: 30px; "></i></a></li>
+                                        <li><a href="# "><i class="fab fa-twitter " style="font-size: 30px; "></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left ">
+                        <div class="copyright-text ">
+                            <p>Copyright &copy; 2021, All Right Reserved
+                                <a href="# "></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
+
+<script>
+    function scrollWaypointInit(items, trigger) {
+        items.each(function() {
+            var element = $(this),
+                osAnimationClass = element.data("animation "),
+                osAnimationDelay = element.attr('data-animation-delay');
+
+            element.css({
+                '-webkit-animation-delay': osAnimationDelay,
+                '-moz-animation-delay': osAnimationDelay,
+                'animation-delay': osAnimationDelay
+            });
+
+            var trigger = (trigger) ? trigger : element;
+
+            trigger.waypoint(function() {
+                element.addClass('animated').addClass(osAnimationClass);
+            }, {
+                // triggerOnce: true,
+                offset: '80%'
+            });
+        });
+    }
+
+    //Call the init
+
+    $(document).ready(function() {
+
+        scrollWaypointInit($('.animateMe'));
+
+    });
+</script>
+
+</html>

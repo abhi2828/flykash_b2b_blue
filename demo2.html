@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="faviconLink1" rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link id="faviconLink2" rel="icon" type="image/ico" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style2.css">
+    <title>Flykash</title>
+    <style></style>
+</head>
+<style>
+    .login-button-container {
+        margin: 32px -15px;
+    }
+    
+    .sign-in {
+        padding-left: 0;
+    }
+    
+    .register {
+        padding-right: 0;
+    }
+    
+    .sign-in__button,
+    .register__button {
+        background-color: white;
+        border: 1px solid black;
+        display: block;
+        min-height: 60px;
+        width: 100%;
+    }
+    
+    fieldset {
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        height: 50vh;
+    }
+    
+    .sign-in__button:hover,
+    .register__button:hover {
+        background: none;
+        border: 1px solid #ccc;
+        color: green;
+    }
+    
+    .sign-in__button:focus,
+    .sign-in__button.focus,
+    .register__button:focus,
+    .register__button.focus {
+        outline: none !important;
+    }
+    
+    .sign-in__button:active,
+    .sign-in__button.active,
+    .register__button:active,
+    .register__button.active {
+        background-color: #ffeb3b;
+        border: 1px solid #ffeb3b;
+        box-shadow: none;
+    }
+    
+    .hidden_clip {
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute;
+    }
+    
+    .text-input__field {
+        border: 0;
+        display: block;
+        font-size: 16px;
+        height: 60px;
+        outline: 1px solid #ccc;
+        padding: 18px;
+        width: 100%;
+    }
+    
+    .text-input__field:focus,
+    .text-input__field.focus {
+        outline: 3px solid orange;
+    }
+    
+    .text-input__field:active,
+    .text-input__field.active {
+        outline: 1px solid black;
+    }
+    
+    .parent_div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    button.btn.sign-in__button,
+    button.btn.register__button {
+        width: 200px;
+    }
+    /* abhay */
+    
+    .field__input {
+        --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+        background-color: transparent;
+        border-radius: 0;
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-family: inherit;
+        font-size: inherit;
+    }
+    
+    .field__input:focus::-webkit-input-placeholder {
+        color: var(--uiFieldPlaceholderColor);
+    }
+    
+    .field__input:focus::-moz-placeholder {
+        color: var(--uiFieldPlaceholderColor);
+    }
+    
+    .field {
+        --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+        --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
+        --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);
+        --uiFieldBorderColorActive: var(--fieldBorderColorActive, #edc815);
+        display: var(--fieldDisplay, inline-flex);
+        position: relative;
+        font-size: var(--fieldFontSize, 1rem);
+    }
+    
+    .field2 {
+        --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+        --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
+        --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);
+        --uiFieldBorderColorActive: var(--fieldBorderColorActive, #edc815);
+        display: var(--fieldDisplay, inline-flex);
+        position: relative;
+        font-size: var(--fieldFontSize, 1rem);
+        width: 30%;
+    }
+    
+    .field__input {
+        box-sizing: border-box;
+        width: var(--fieldWidth, 100%);
+        height: var(--fieldHeight, 3rem);
+        padding: var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight) var(--fieldPaddingBottom, .5rem) var(--uiFieldPaddingLeft);
+        border-bottom: var(--uiFieldBorderWidth) solid var(--fieldBorderColor, rgba(0, 0, 0, .25));
+    }
+    
+    .field__input:focus {
+        outline: none;
+    }
+    
+    .field__input::-webkit-input-placeholder {
+        opacity: 0;
+        transition: opacity .2s ease-out;
+    }
+    
+    .field__input::-moz-placeholder {
+        opacity: 0;
+        transition: opacity .2s ease-out;
+    }
+    
+    .field__input:focus::-webkit-input-placeholder {
+        opacity: 1;
+        transition-delay: .2s;
+    }
+    
+    .field__input:focus::-moz-placeholder {
+        opacity: 1;
+        transition-delay: .2s;
+    }
+    
+    .field__label-wrap {
+        box-sizing: border-box;
+        pointer-events: none;
+        cursor: text;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .field__label-wrap::after {
+        content: "";
+        box-sizing: border-box;
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .field__input:focus~.field__label-wrap::after {
+        opacity: 1;
+    }
+    
+    .field__label {
+        position: absolute;
+        left: var(--uiFieldPaddingLeft);
+        top: calc(50% - .5em);
+        line-height: 1;
+        font-size: var(--fieldHintFontSize, inherit);
+        transition: top .2s cubic-bezier(0.9, -0.15, 0.1, 1.15), opacity .2s ease-out, font-size .2s ease-out;
+        will-change: bottom, opacity, font-size;
+    }
+    
+    .field__input:focus~.field__label-wrap .field__label,
+    .field__input:not(:placeholder-shown)~.field__label-wrap .field__label {
+        --fieldHintFontSize: var(--fieldHintFontSizeFocused, .75rem);
+        top: var(--fieldHintTopHover, .25rem);
+    }
+    
+    .field_v2 .field__label-wrap {
+        overflow: hidden;
+    }
+    
+    .field_v2 .field__label-wrap::after {
+        border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColorActive);
+        transform: translate3d(-105%, 0, 0);
+        will-change: transform, opacity;
+        transition: transform .285s ease-out .2s, opacity .2s ease-out .2s;
+    }
+    
+    .field_v2 .field__input:focus~.field__label-wrap::after {
+        transform: translate3d(0, 0, 0);
+        transition-delay: 0;
+    }
+    
+    span.field_inline {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border: 2px solid #edc815;
+        outline: 0;
+        box-shadow: none;
+    }
+    
+    button.btn.sign-in__button,
+    button.btn.register__button {
+        font-weight: 600;
+    }
+    
+    .sign-in__button:hover,
+    .register__button:hover {
+        background: #ffeb3b;
+        border: none;
+        color: black;
+    }
+    
+    .background_form {
+        background: #ff000000;
+    }
+    
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .page {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 480px;
+        margin: auto;
+        padding: 1rem;
+        display: grid;
+        grid-gap: 30px;
+    }
+</style>
+
+<body>
+    <div class="container background_form">
+
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+            <div class="login-button-container clearfix">
+                <div class="parent_div">
+                    <div class="col-xs-6 sign-in">
+                        <button class="btn sign-in__button active">
+                    Flight       
+                  </button>
+                    </div>
+
+                    <div class="col-xs-6 register">
+                        <button class="btn register__button">
+                    Hotel        
+                  </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+
+            <div class="row login__form" style="display: block;">
+                <div class="page">
+                    <label class="field field_v2">
+                      <input class="field__input" placeholder="e.g. Mumbai">
+                      <span class="field__label-wrap">
+                        <span class="field__label">Flying From</span>
+                      </span>
+                    </label>
+                    <label class="field field_v2">
+                        <input class="field__input" placeholder="e.g. Delhi">
+                        <span class="field__label-wrap">
+                          <span class="field__label">Flying To</span>
+                        </span>
+                      </label>
+                    <label class="field field_v2">
+                        <input type="date" class="field__input" placeholder="e.g. Mumbai">
+                        <span class="field__label-wrap">
+                          <span class="field__label">Departure Date</span>
+                        </span>
+                      </label>
+                    <label class="field field_v2">
+                          <input type="date" class="field__input" placeholder="e.g. Delhi">
+                          <span class="field__label-wrap">
+                            <span class="field__label">Return Date</span>
+                          </span>
+                        </label>
+                    <span class="field_inline">
+                        <label class="field2 field_v2">
+                            <input type="number" min="0"  value="0" class="field__input" placeholder="Number of Adults">
+                            <span class="field__label-wrap">
+                              <span class="field__label">Adults (12+ Yrs)</span>
+                    </span>
+                    </label>
+                    <label class="field2 field_v2">
+                            <input type="number" min="0"  value="0" class="field__input" placeholder="Number of Children">
+                            <span class="field__label-wrap">
+                              <span class="field__label">Children (2 - 12 Yrs)</span>
+                            </span>
+                    </label>
+                    <label class="field2 field_v2">
+                            <input type="number" min="0"  value="0" class="field__input" placeholder="Number of Infant">
+                            <span class="field__label-wrap">
+                              <span class="field__label">Infant (0 - 24 Month)</span>
+                            </span>
+                    </label>
+                    </span>
+                    <select class="form-control form-control2">
+                        <option>Economy class</option>
+                        <option>Business class</option>
+                        <option>First class</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row register__form" style="display: none;">
+                bbbbbbbb
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $('.register__form').hide();
+
+    $('.sign-in__button').click(function(e) {
+        e.preventDefault();
+        $(this).addClass('active');
+        $('.register__button').removeClass('active');
+        $('.login__form').show();
+        $('.register__form').hide();
+        $('#edit-email').focus(); //Should appear after $('.login__form').show(); because if it's before that, the register form doesn't exist in the DOM
+    });
+
+    $('.register__button').click(function(e) {
+        e.preventDefault();
+        $(this).addClass('active');
+        $('.sign-in__button').removeClass('active');
+        $('.register__form').show();
+        $('.login__form').hide();
+        $('#edit-firstname').focus(); //Should appear after $('.register__form').show(); because if it's before that, the register form doesn't exist in the DOM
+    });
+</script>
+
+</html>

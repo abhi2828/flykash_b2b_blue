@@ -1,0 +1,395 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="./assets/dependencies/login_page.js"></script>
+    <script src="./assets/dependencies/login_page2.js"></script>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Mukta');
+        a {
+            text-decoration: none;
+            color: #444444;
+        }
+        
+        .row_header_support_icon {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        header {
+            padding-top: 5px;
+        }
+        
+        .header_icon {
+            padding-top: 15px;
+        }
+        
+        .banner_img {
+            background: url("./assets/images/bg4.jpg") no-repeat center center;
+            position: relative;
+            height: 85vh;
+            background-size: cover;
+        }
+        
+        .login-reg-panel {
+            position: relative;
+            top: 46%;
+            transform: translateY(-50%);
+            text-align: center;
+            width: 70%;
+            right: 0;
+            left: 0;
+            margin: auto;
+            height: 355px;
+            background-color: #3f51b5a1;
+        }
+        
+        .white-panel {
+            background-color: rgba(255, 255, 255, 1);
+            height: 442px;
+            position: absolute;
+            top: -50px;
+            width: 50%;
+            right: calc(50% - 50px);
+            transition: .3s ease-in-out;
+            z-index: 0;
+            box-shadow: 0 0 15px 9px #00000096;
+        }
+        
+        .login-reg-panel input[type="radio"] {
+            position: relative;
+            display: none;
+        }
+        
+        .login-reg-panel {
+            color: white;
+        }
+        
+        .login-reg-panel #label-login,
+        .login-reg-panel #label-register {
+            border: 1px solid #2f2e2e;
+            padding: 5px 5px;
+            width: 150px;
+            display: block;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        .login-info-box {
+            width: 40%;
+            padding: 0 0 0 50px;
+            top: 20%;
+            left: 0;
+            position: absolute;
+            text-align: left;
+        }
+        
+        .register-info-box {
+            width: 40%;
+            top: 20%;
+            right: 0;
+            position: absolute;
+            text-align: left;
+        }
+        
+        .right-log {
+            right: 50px !important;
+        }
+        
+        .login-show,
+        .register-show {
+            z-index: 1;
+            display: none;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            color: #242424;
+            text-align: left;
+            padding: 50px;
+        }
+        
+        .show-log-panel {
+            display: block;
+            opacity: 0.9;
+        }
+        
+        .login-show input[type="text"],
+        .login-show input[type="password"] {
+            width: 100%;
+            display: block;
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #b5b5b5;
+            outline: none;
+        }
+        
+        .login_btn {
+            max-width: 150px;
+            width: 100%;
+            background: #444444;
+            color: #f9f9f9;
+            border: none;
+            text-transform: uppercase;
+            border-radius: 2px;
+            float: right;
+            cursor: pointer;
+        }
+        
+        .login-show a {
+            display: inline-block;
+            padding: 10px 0;
+        }
+        
+        .register-show input[type="text"],
+        .register-show input[type="password"] {
+            width: 100%;
+            display: block;
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #b5b5b5;
+            outline: none;
+        }
+        
+        .Register_btn {
+            max-width: 150px;
+            width: 100%;
+            background: #444444;
+            color: #f9f9f9;
+            border: none;
+            padding: 10px;
+            text-transform: uppercase;
+            border-radius: 2px;
+            float: right;
+            cursor: pointer;
+        }
+        
+        .credit {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #3B3B25;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            z-index: 99;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #575757;
+        }
+        
+        .footer_ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .footer_ul2 {
+            display: none;
+            list-style: none;
+            padding: 10px 0 0 25px;
+            margin: 10px 0;
+        }
+        
+        .footer {
+            margin-top: 2pc;
+        }
+        
+        li.footer_link {
+            margin: 0 30px;
+        }
+        
+        .copyright_row2 {
+            display: flex;
+            justify-content: center;
+        }
+        
+        @media only screen and (max-width:575px) {
+            .log_img {
+                width: 160px !important;
+                padding: 10px 0 0 0;
+            }
+            .input_container {
+                width: 100%;
+            }
+            .register_now {
+                margin-top: 20px;
+            }
+            a.register {
+                margin-right: 20px;
+            }
+            .support a i {
+                font-size: 20px;
+                margin: 14px 10px 0 0;
+                color: #244190;
+            }
+            .support {
+                padding-right: 0px !important;
+            }
+            .banner h3 {
+                margin-top: 20px;
+                font-size: 25px;
+            }
+            .contact {
+                color: white;
+                width: 78%;
+                margin-left: 36px;
+            }
+            div.main {
+                height: 80vh;
+            }
+            .footer_ul {
+                display: none;
+            }
+            .footer_ul2 {
+                display: block !important;
+                list-style: none;
+                padding: 10px 0 0 25px;
+                margin: 10px 0;
+            }
+            .btn_login {
+                margin-top: 0 !important;
+            }
+            .mobile_btn {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 col-sm-7 col-8 ">
+                    <div class="log">
+                        <img class="log_img" src="./assets/images/Logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-5 col-4 header_icon">
+                    <div class="row_header_support_icon">
+                        <!-- <div class="register_now">
+                            <a class="register" href="#" style="color: #5f6060;" title="Register Now"><i class="fa fa-user-plus" aria-hidden="true" style="margin-right: 10px;"></i> <span class="header_support_icon">Register Now</span></a>
+                        </div> -->
+                        <div class="support" style="padding-right: 30px;">
+                            <a href="tel: +919319283452" style="color: #5f6060;" title="Support"><i class="fas fa-headset"></i>  <span class="header_support_icon">+91-9319283452</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner_img">
+        <div class="login-reg-panel">
+            <div class="login-info-box">
+                <h2>Have an account?</h2>
+                <p>Login with your id</p>
+                <label id="label-register" for="log-reg-show">Login</label>
+                <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
+            </div>
+
+            <div class="register-info-box">
+                <h2>Don't have an account?</h2>
+                <p>Register now</p>
+                <label id="label-login" for="log-login-show">Register</label>
+                <input type="radio" name="active-log-panel" id="log-login-show">
+            </div>
+
+            <div class="white-panel">
+                <div class="login-show">
+                    <h2>LOGIN</h2>
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href="">Forgot password?</a>
+                    <button class="login_btn" type="button"><a style="color: #ffffff;" href="./post_login_flykash.html">Login</a></button>
+                </div>
+                <div class="register-show">
+                    <h2>REGISTER</h2>
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <button class="Register_btn" type="button"><a style="color: #ffffff;" href="./index.html">Register</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container-fluid" style="height: 15px;">
+            <div class="row footer_link_row">
+                <div class="col-md-12">
+                    <ul class="footer_ul row">
+                        <li class="footer_link"><a href="#">About Us </a></li>|
+                        <li class="footer_link"> <a href="#">Privacy Policy </a></li>|
+                        <li class="footer_link"> <a href="#">Cancellation & Refund Policy </a></li>|
+                        <li class="footer_link"> <a href="#">Terms & Conditions</a></li>
+                    </ul>
+                    <ul class="footer_ul2">
+                        <li class="footer_link"><a href="#">About Us</a> </li>
+                        <li class="footer_link"> <a href="#">Privacy Policy</a></li>
+                        <li class="footer_link"> <a href="#">Cancellation & Refund Policy</a></li>
+                        <li class="footer_link"> <a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row copyright_row">
+                <div class="col-md-12">
+                    <footer class="footer-section">
+                        <div class="copyright-area">
+                            <div class="container" style="margin-left: 25px;">
+                                <div class="row copyright_row2">
+                                    <div class="text-center text-lg-left">
+                                        <div class="copyright-text">
+                                            <p>Copyright &copy; 2021, All Right Reserved</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.login-info-box').fadeOut();
+        $('.login-show').addClass('show-log-panel');
+    });
+
+
+    $('.login-reg-panel input[type="radio"]').on('change', function() {
+
+        if ($('#log-login-show').is(':checked')) {
+
+            $('.register-info-box').fadeOut();
+            $('.login-info-box').fadeIn();
+
+            $('.white-panel').addClass('right-log');
+            $('.register-show').addClass('show-log-panel');
+            $('.login-show').removeClass('show-log-panel');
+
+        } else if ($('#log-reg-show').is(':checked')) {
+
+            $('.register-info-box').fadeIn();
+            $('.login-info-box').fadeOut();
+
+            $('.white-panel').removeClass('right-log');
+
+            $('.login-show').addClass('show-log-panel');
+            $('.register-show').removeClass('show-log-panel');
+        }
+    });
+</script>
