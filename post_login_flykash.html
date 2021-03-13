@@ -15,154 +15,11 @@
 
     <link rel="stylesheet" href="./assets/css/style2.css">
     <title>Flykash</title>
-    <style></style>
-</head>
-
-<body>
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar menu menu-3 fixed-top navbar-expand-lg navbar-light bg-light">
-                        <a href="#"><img src="./assets/images/Logo.png" alt="Logo"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                            <ul class="navbar-nav nav-menu ml-auto mt-2 mt-lg-0">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Flight </a>
-                                </li>
-                                <li class="nav-item menu_items">
-                                    <a class="nav-link" href="#">Hotel </a>
-                                </li>
-                                <li class="nav-item menu_items">
-                                    <a class="nav-link" href="#">Holidays </a>
-                                </li>
-                                <li class="nav-item menu_items">
-                                    <a class="nav-link" href="#">Shikara </a>
-                                </li>
-                                <li class="nav-item menu_items">
-                                    <a class="nav-link" href="#">profile </a>
-                                </li>
-                                <li class="nav-item menu_items">
-                                    <a class="nav-link" href="#">support </a>
-                                </li>
-                                <li class="nav-item menu_items">
-                                    <a class="nav-link" href="./index.html">Logout </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- <script>
-        if ($('.nav-item').hasClass('active')) {
-            $('.nav-item').removeClass('menu_items')
-        } else {
-            $('.nav-item').addClass('menu_items')
-        }
-    </script> -->
-    <!-- search section -->
-
-
-    <section class="banner_img">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="container background_form">
-                        <div class="outer_div">
-                            <div class="abhay2">
-                                <div class="login-button-container clearfix">
-                                    <div class="parent_div">
-                                        <div class="col-xs-6 sign-in">
-                                            <button class="btn sign-in__button active">
-                                        Flight       
-                                      </button>
-                                        </div>
-
-                                        <div class="col-xs-6 register">
-                                            <button class="btn register__button">
-                                        Hotel        
-                                      </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="abhay1">
-                                <div class="row login__form" style="display: block;">
-                                    <div class="page">
-                                        <label class="field field_v2">
-                                          <input class="field__input" placeholder="e.g. Mumbai">
-                                          <span class="field__label-wrap">
-                                            <span class="field__label">Flying From</span>
-                                          </span>
-                                        </label>
-                                        <label class="field field_v2">
-                                            <input class="field__input" placeholder="e.g. Delhi">
-                                            <span class="field__label-wrap">
-                                              <span class="field__label">Flying To</span>
-                                            </span>
-                                          </label>
-                                        <label class="field field_v2">
-                                            <input type="date" class="field__input" placeholder="e.g. Mumbai" style="text-transform: lowercase;">
-                                            <span class="field__label-wrap">
-                                              <span class="field__label">Departure Date</span>
-                                            </span>
-                                          </label>
-                                        <label class="field field_v2">
-                                              <input type="date" class="field__input" placeholder="e.g. Delhi" style="text-transform: lowercase;">
-                                              <span class="field__label-wrap">
-                                                <span class="field__label">Return Date</span>
-                                              </span>
-                                            </label>
-                                        <span class="field_inline">
-                                            <label class="field2 field_v2">
-                                                <input type="number" min="0"  value="0" class="field__input" placeholder="Number of Adults">
-                                                <span class="field__label-wrap">
-                                                  <span class="field__label">Adults (12+ Yrs)</span>
-                                        </span>
-                                        </label>
-                                        <label class="field2 field_v2">
-                                                <input type="number" min="0"  value="0" class="field__input" placeholder="Number of Children">
-                                                <span class="field__label-wrap">
-                                                  <span class="field__label">Children (2 - 12 Yrs)</span>
-                                                </span>
-                                        </label>
-                                        <label class="field2 field_v2">
-                                                <input type="number" min="0"  value="0" class="field__input" placeholder="Number of Infant">
-                                                <span class="field__label-wrap">
-                                                  <span class="field__label">Infant (0 - 24 Month)</span>
-                                                </span>
-                                        </label>
-                                        </span>
-                                        <select class="form-control form-control2">
-                                            <option>Economy class</option>
-                                            <option>Business class</option>
-                                            <option>First class</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="row register__form" style="display: none;">
-                                    bbbbbbbb
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <style>
         .h2,
         h2 {
             font-size: 2rem;
-            color: blue;
+            color: #0f8fb3;
         }
         
         section.section2 {
@@ -268,8 +125,12 @@
         }
         /* abhay */
         
+         ::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+        
         .field__input {
-            --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+            --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, white);
             background-color: transparent;
             border-radius: 0;
             border: none;
@@ -291,17 +152,30 @@
             --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
             --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
             --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);
-            --uiFieldBorderColorActive: var(--fieldBorderColorActive, #253184);
+            --uiFieldBorderColorActive: var(--fieldBorderColorActive, white);
             display: var(--fieldDisplay, inline-flex);
             position: relative;
             font-size: var(--fieldFontSize, 1rem);
+            width: -webkit-fill-available;
         }
         
         .field2 {
             --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
             --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
             --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);
-            --uiFieldBorderColorActive: var(--fieldBorderColorActive, #253184);
+            --uiFieldBorderColorActive: var(--fieldBorderColorActive, white);
+            display: var(--fieldDisplay, inline-flex);
+            position: relative;
+            font-size: var(--fieldFontSize, 1rem);
+            width: 49.5%;
+            margin-top: 15px;
+        }
+        
+        .field3 {
+            --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+            --uiFieldPaddingRight: var(--fieldPaddingRight, 1rem);
+            --uiFieldPaddingLeft: var(--fieldPaddingLeft, 1rem);
+            --uiFieldBorderColorActive: var(--fieldBorderColorActive, white);
             display: var(--fieldDisplay, inline-flex);
             position: relative;
             font-size: var(--fieldFontSize, 1rem);
@@ -313,7 +187,9 @@
             width: var(--fieldWidth, 100%);
             height: var(--fieldHeight, 3rem);
             padding: var(--fieldPaddingTop, 1.25rem) var(--uiFieldPaddingRight) var(--fieldPaddingBottom, .5rem) var(--uiFieldPaddingLeft);
-            border-bottom: var(--uiFieldBorderWidth) solid var(--fieldBorderColor, rgba(0, 0, 0, .25));
+            border-bottom: var(--uiFieldBorderWidth) solid #229cc1;
+            margin-top: 10px;
+            color: white;
         }
         
         .field__input:focus {
@@ -374,6 +250,7 @@
             font-size: var(--fieldHintFontSize, inherit);
             transition: top .2s cubic-bezier(0.9, -0.15, 0.1, 1.15), opacity .2s ease-out, font-size .2s ease-out;
             will-change: bottom, opacity, font-size;
+            color: white;
         }
         
         .field__input:focus~.field__label-wrap .field__label,
@@ -403,10 +280,42 @@
             justify-content: space-between;
         }
         
+        .form-control {
+            display: block;
+            width: 70%;
+            margin-right: 38px;
+            padding: .375rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s;
+            margin-top: 15px;
+        }
+        
+        .form-control2 {
+            display: block;
+            width: 50%;
+            margin-right: 38px;
+            padding: .375rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s;
+            margin-top: 15px;
+        }
+        
         .form-control:focus {
             color: #495057;
             background-color: #fff;
-            border: 2px solid #253184;
+            border: none;
             outline: 0;
             box-shadow: none;
         }
@@ -445,42 +354,325 @@
             flex-direction: column;
         }
         
-        .page {
-            box-sizing: border-box;
-            width: 100%;
-            max-width: 86%;
-            margin: auto;
-            padding: 0 1rem;
-            display: grid;
-            grid-gap: 10px;
-        }
-        
         .btn.focus,
         .btn:focus {
             outline: 0;
             box-shadow: none;
         }
+        /* new code */
+        
+        .banner_flight_search {
+            margin: 15px 0;
+        }
+        
+        .search_box {
+            background: #2c96b5c2;
+            padding: 30px;
+        }
+        
+        button:focus,
+        button:hover,
+        .active_item {
+            outline: none !important;
+            background: #0a78b9 !important;
+            color: white !important;
+        }
+        
+        .search_btn {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .search_box {
+            background: #2c96b5c2;
+            padding: 30px;
+        }
+        
+        .search_btn button {
+            width: 150px;
+            height: 45px;
+            border: none;
+            border-radius: 20px;
+            background: #229cc1;
+            color: white;
+            box-shadow: 0 0px 7px #e8e7e742;
+        }
+        
+        .btn-primary {
+            color: #007bff !important;
+            background-color: #ffffff !important;
+            border-color: #ffffff !important;
+            width: 150px;
+            height: 45px;
+            font-weight: 600;
+        }
+        
+        .align_btn {
+            justify-content: center;
+            display: flex;
+        }
+        
+        .align_text {
+            display: flex;
+        }
     </style>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar menu menu-3 fixed-top navbar-expand-lg navbar-light bg-light">
+                        <a href="#"><img src="./assets/images/Logo.png" alt="Logo"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav nav-menu ml-auto mt-2 mt-lg-0">
+                                <li class="nav-item menu_items activemenu">
+                                    <a class="nav-link" href="#">Flight </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="#">Hotel </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="#">Holidays </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="#">Shikara </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="#">profile </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="#">support </a>
+                                </li>
+                                <li class="nav-item menu_items">
+                                    <a class="nav-link" href="./index.html">Logout </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
     <script>
-        $('.register__form').hide();
+    </script>
+    <section class="banner_img">
+        <div class="container">
+            <br><br><br>
+            <div class="row">
+                <div class="col-md-6 offset-md-6">
+                    <div class="search_box">
+                        <div class="search_btn">
+                            <button class="button1 active_item oneway">one way</button>
+                            <button class="button2 round">round trip</button>
+                            <button class="button3 multi">multi city</button>
+                        </div>
+                        <!-- item 1 -->
+                        <div class="banner_flight_search item1">
+                            <label class="field field_v2">
+                                <input class="field__input" placeholder="e.g. Mumbai">
+                                <span class="field__label-wrap">
+                                  <span class="field__label">Flying From</span>
+                                </span>
+                              </label>
+                            <br>
+                            <label class="field field_v2">
+                                  <input class="field__input" placeholder="e.g. Delhi">
+                                  <span class="field__label-wrap">
+                                    <span class="field__label">Flying To</span>
+                                  </span>
+                                </label>
+                            <label class="field2 field_v2" style="width: 100%;">
+                                  <input type="date" class="field__input" placeholder="e.g. Mumbai" style="text-transform: lowercase;">
+                                  <span class="field__label-wrap">
+                                    <span class="field__label">Departure Date</span>
+                                  </span>
+                                </label>
+                            <!-- <label class="field2 field_v2">
+                                    <input type="date" class="field__input" placeholder="e.g. Delhi" style="text-transform: lowercase;">
+                                    <span class="field__label-wrap">
+                                      <span class="field__label">Return Date</span>
+                                    </span>
+                                  </label> -->
+                            <span class="field_inline">
+                                  <label class="field3 field_v2">
+                                      <input type="number" min="0"  max="10" value="0" class="field__input" placeholder="Number of Adults">
+                                      <span class="field__label-wrap">
+                                        <span class="field__label">Adults (12+ Yrs)</span>
+                            </span>
+                            </label>
+                            <label class="field3 field_v2">
+                                      <input type="number" min="0"  max="5" value="0" class="field__input" placeholder="Number of Children">
+                                      <span class="field__label-wrap">
+                                        <span class="field__label">Children (2 - 12 Yrs)</span>
+                                      </span>
+                              </label>
+                            <label class="field3 field_v2">
+                                      <input type="number" min="0"  max="2" value="0" class="field__input" placeholder="Number of Infant">
+                                      <span class="field__label-wrap">
+                                        <span class="field__label">Infant (0 - 24 Month)</span>
+                                      </span>
+                              </label>
+                            </span>
+                            <div class="align_text">
+                                <select class="form-control2">
+                                    <option value="Economy">Economy class</option>
+                                    <option value="Business">Business class</option>
+                                    <option value="First">First class</option>
+                                </select>
+                                <!-- <label class="field field_v2">
+                                    <input class="field__input" placeholder="e.g. Air India">
+                                    <span class="field__label-wrap">
+                                      <span class="field__label">preferred Airline</span>
+                                    </span>
+                                  </label> -->
+                            </div>
+                            <br>
+                            <div class="align_btn">
+                                <button class="btn btn-primary" type="submit">Search Flights</button>
+                            </div>
+                        </div>
+                        <!-- item 2 -->
+                        <div class="banner_flight_search item2">
+                            <label class="field field_v2">
+                                <input class="field__input" placeholder="e.g. Mumbai">
+                                <span class="field__label-wrap">
+                                  <span class="field__label">Flying From</span>
+                                </span>
+                              </label>
+                            <br>
+                            <label class="field field_v2">
+                                  <input class="field__input" placeholder="e.g. Delhi">
+                                  <span class="field__label-wrap">
+                                    <span class="field__label">Flying To</span>
+                                  </span>
+                                </label>
+                            <label class="field2 field_v2">
+                                  <input type="date" class="field__input" placeholder="e.g. Mumbai" style="text-transform: lowercase;">
+                                  <span class="field__label-wrap">
+                                    <span class="field__label">Departure Date</span>
+                                  </span>
+                                </label>
+                            <label class="field2 field_v2">
+                                    <input type="date" class="field__input" placeholder="e.g. Delhi" style="text-transform: lowercase;">
+                                    <span class="field__label-wrap">
+                                      <span class="field__label">Return Date</span>
+                                    </span>
+                                  </label>
+                            <span class="field_inline">
+                                  <label class="field3 field_v2">
+                                      <input type="number" min="0"  max="10" value="0" class="field__input" placeholder="Number of Adults">
+                                      <span class="field__label-wrap">
+                                        <span class="field__label">Adults (12+ Yrs)</span>
+                            </span>
+                            </label>
+                            <label class="field3 field_v2">
+                                      <input type="number" min="0"  max="5" value="0" class="field__input" placeholder="Number of Children">
+                                      <span class="field__label-wrap">
+                                        <span class="field__label">Children (2 - 12 Yrs)</span>
+                                      </span>
+                              </label>
+                            <label class="field3 field_v2">
+                                      <input type="number" min="0"  max="2" value="0" class="field__input" placeholder="Number of Infant">
+                                      <span class="field__label-wrap">
+                                        <span class="field__label">Infant (0 - 24 Month)</span>
+                                      </span>
+                              </label>
+                            </span>
+                            <div class="align_text">
+                                <select class="form-control2">
+                                    <option value="Economy">Economy class</option>
+                                    <option value="Business">Business class</option>
+                                    <option value="First">First class</option>
+                                </select>
+                                <!-- <label class="field field_v2">
+                                    <input class="field__input" placeholder="e.g. Air India">
+                                    <span class="field__label-wrap">
+                                      <span class="field__label">Preferred Airline</span>
+                                    </span>
+                                  </label> -->
+                            </div>
+                            <br>
+                            <div class="align_btn">
+                                <button class="btn btn-primary" type="submit">Search Flights</button>
+                            </div>
+                        </div>
+                        <!-- item 3 -->
+                        <div class="banner_flight_search item3">
+                            <label class="field field_v2">
+                                <input class="field__input" placeholder="e.g. Mumbai">
+                                <span class="field__label-wrap">
+                                  <span class="field__label">Flying From</span>
+                                </span>
+                              </label>
+                            <br>
+                            <label class="field field_v2">
+                                  <input class="field__input" placeholder="e.g. Delhi">
+                                  <span class="field__label-wrap">
+                                    <span class="field__label">Flying To</span>
+                                  </span>
+                                </label>
+                            <label class="field2 field_v2">
+                                  <input type="date" class="field__input" placeholder="e.g. Mumbai" style="text-transform: lowercase;">
+                                  <span class="field__label-wrap">
+                                    <span class="field__label">Departure Date</span>
+                                  </span>
+                                </label>
+                            <label class="field2 field_v2">
+                                    <input type="date" class="field__input" placeholder="e.g. Delhi" style="text-transform: lowercase;">
+                                    <span class="field__label-wrap">
+                                      <span class="field__label">Return Date</span>
+                                    </span>
+                                  </label>
+                            <span class="field_inline">
+                                  <label class="field3 field_v2">
+                                      <input type="number" min="0"  max="10" value="0" class="field__input" placeholder="Number of Adults">
+                                      <span class="field__label-wrap">
+                                        <span class="field__label">Adults (12+ Yrs)</span>
+                            </span>
+                            </label>
+                            <label class="field3 field_v2">
+                                      <input type="number" min="0"  max="5" value="0" class="field__input" placeholder="Number of Children">
+                                      <span class="field__label-wrap">
+                                        <span class="field__label">Children (2 - 12 Yrs)</span>
+                                      </span>
+                              </label>
+                            <label class="field3 field_v2">
+                                      <input type="number" min="0"  max="2" value="0" class="field__input" placeholder="Number of Infant">
+                                      <span class="field__label-wrap">
+                                        <span class="field__label">Infant (0 - 24 Month)</span>
+                                      </span>
+                              </label>
+                            </span>
+                            <div class="align_text">
+                                <select class="form-control">
+                                    <option value="Economy">Economy class</option>
+                                    <option value="Business">Business class</option>
+                                    <option value="First">First class</option>
+                                </select>
+                                <label class="field field_v2">
+                                    <input class="field__input" placeholder="e.g. Air India">
+                                    <span class="field__label-wrap">
+                                      <span class="field__label">Preferred Airline</span>
+                                    </span>
+                                  </label>
+                            </div>
+                            <br>
+                            <div class="align_btn">
+                                <button class="btn btn-primary" type="submit">Search Flights</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        $('.sign-in__button').click(function(e) {
-            e.preventDefault();
-            $(this).addClass('active');
-            $('.register__button').removeClass('active');
-            $('.login__form').show();
-            $('.register__form').hide();
-            $('#edit-email').focus(); //Should appear after $('.login__form').show(); because if it's before that, the register form doesn't exist in the DOM
-        });
-
-        $('.register__button').click(function(e) {
-            e.preventDefault();
-            $(this).addClass('active');
-            $('.sign-in__button').removeClass('active');
-            $('.register__form').show();
-            $('.login__form').hide();
-            $('#edit-firstname').focus(); //Should appear after $('.register__form').show(); because if it's before that, the register form doesn't exist in the DOM
-        });
+    <script>
     </script>
     <section class="section2">
         <div class="container">
@@ -573,7 +765,7 @@
                 <div class="col-md-12 ">
                     <p class="text " style="font-size: 18px; ">
                         <marquee direction="left ">
-                            <p style="color: #253184 !important; ">For flights which have been cancelled, we have protected your booking... Customers who have booked their travel through a travel agent/online portal are requested to connect with the travel agent directly to redeem their credit
+                            <p style="color: black !important; ">For flights which have been cancelled, we have protected your booking... Customers who have booked their travel through a travel agent/online portal are requested to connect with the travel agent directly to redeem their credit
                                 note.
                             </p>
                         </marquee>
@@ -765,6 +957,39 @@
 
         scrollWaypointInit($('.animateMe'));
 
+    });
+
+    // select form 
+    $('.item2').hide();
+    $('.item3').hide();
+
+    $('.button1').click(function(e) {
+        e.preventDefault();
+        $(this).addClass('active_item').css('background', '#0a78b9');
+        $('.button2').removeClass('active_item').css('background', '#229cc1');
+        $('.button3').removeClass('active_item').css('background', '#229cc1');
+        $('.item1').show();
+        $('.item2').hide();
+        $('.item3').hide();
+    });
+
+    $('.button2').click(function(e) {
+        e.preventDefault();
+        $(this).addClass('active_item').css('background', '#0a78b9');
+        $('.button3').removeClass('active_item').css('background', '#229cc1');
+        $('.button1').removeClass('active_item').css('background', '#229cc1');
+        $('.item2').show();
+        $('.item1').hide();
+        $('.item3').hide();
+    });
+    $('.button3').click(function(e) {
+        e.preventDefault();
+        $(this).addClass('active_item').css('background', '#0a78b9');
+        $('.button2').removeClass('active_item').css('background', '#229cc1');
+        $('.button1').removeClass('active_item').css('background', '#229cc1');
+        $('.item3').show();
+        $('.item1').hide();
+        $('.item2').hide();
     });
 </script>
 

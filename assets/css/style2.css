@@ -58,6 +58,7 @@
      height: 2px;
      position: absolute;
      left: 0;
+     top: 32px;
      bottom: 0;
      color: rgba(0, 0, 0, .9);
      transition: 0.5s transform ease;
@@ -69,20 +70,21 @@
      transform: scale3d(1, 1, 1);
  }
  
- .active {
-     border-bottom: 2px solid #253184;
+ .activemenu {
+     border-bottom: 2px solid #2196f3;
  }
  
  .menu-3 a::before {
      transform-origin: 50% 50%;
-     background: #253184;
+     background: #2196f3;
  }
  /* search section  */
  
  .banner_img {
-     background: url("../images/bg4.jpg") no-repeat center center;
+     background: url(../images/bg1.jpg) no-repeat center center;
      position: relative;
-     height: 100vh;
+     height: auto;
+     padding: 30px;
      background-size: cover;
  }
  /* travel with us card */
@@ -259,7 +261,7 @@
  }
  
  footer {
-     background: #253184;
+     background: #0f8fb3;
  }
  
  img.dowloadlink {

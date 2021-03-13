@@ -43,7 +43,7 @@
             left: 0;
             margin: auto;
             height: 355px;
-            background-color: #3f51b5a1;
+            background-color: #2c96b5a1;
         }
         
         .white-panel {
@@ -83,7 +83,7 @@
         .login-info-box {
             width: 40%;
             padding: 0 0 0 50px;
-            top: 20%;
+            top: 48%;
             left: 0;
             position: absolute;
             text-align: left;
@@ -91,7 +91,7 @@
         
         .register-info-box {
             width: 40%;
-            top: 20%;
+            top: 48%;
             right: 0;
             position: absolute;
             text-align: left;
@@ -291,33 +291,32 @@
     <section class="banner_img">
         <div class="login-reg-panel">
             <div class="login-info-box">
-                <h2>Have an account?</h2>
-                <p>Login with your id</p>
-                <label id="label-register" for="log-reg-show">Login</label>
+                <h2>User</h2>
+                <!-- <p>Login with your id</p> -->
+                <label id="label-register" for="log-reg-show">User Login</label>
                 <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
             </div>
 
             <div class="register-info-box">
-                <h2>Don't have an account?</h2>
-                <p>Register now</p>
-                <label id="label-login" for="log-login-show">Register</label>
+                <h2>Administrator</h2>
+                <!-- <p>Admin Login</p> -->
+                <label id="label-login" for="log-login-show">Admin Login</label>
                 <input type="radio" name="active-log-panel" id="log-login-show">
             </div>
 
             <div class="white-panel">
                 <div class="login-show">
-                    <h2>LOGIN</h2>
+                    <h2>User Login</h2>
                     <input type="text" placeholder="Email">
                     <input type="password" placeholder="Password">
                     <a href="">Forgot password?</a>
                     <button class="login_btn" type="button"><a style="color: #ffffff;" href="./post_login_flykash.html">Login</a></button>
                 </div>
                 <div class="register-show">
-                    <h2>REGISTER</h2>
+                    <h2>Administrator</h2>
                     <input type="text" placeholder="Email">
                     <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Confirm Password">
-                    <button class="Register_btn" type="button"><a style="color: #ffffff;" href="./index.html">Register</a></button>
+                    <button class="Register_btn" type="button"><a style="color: #ffffff;" href="./post_login_flykash.html">Login</a></button>
                 </div>
             </div>
         </div>
